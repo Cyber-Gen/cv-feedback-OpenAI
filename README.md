@@ -1,8 +1,8 @@
 # CV/Resume Feedback (OpenAI)
 
-**IMPORTANT: This program sends the contents of the job posting and resume files to OpenAI for processing. Please ensure that these files do not contain any sensitive information that you do not wish to share with OpenAI. The author of this program is not responsible for any misuse of the program and provides it AS-IS, without any warranty or assumption of responsibility.**
+**IMPORTANT: This program shares the contents of job posting and resume files with OpenAI for processing. Please ensure that these files do not contain any sensitive information that you do not wish to be processed by OpenAI. The author of this program is not responsible for any misuse of the program and provides it AS-IS, without any warranty or assumption of responsibility.**
 
-This program is a contribution to the ISACA community to assist with job searches. It uses the OpenAI API to generate recommendations for improving a resume based on a given job posting. It reads a job posting and a resume from text files, sends them to the OpenAI API, and writes the recommendations to another text file.
+This program is a contribution to the ISACA community to assist with members job search. It uses the OpenAI API to generate recommendations for improving a resume based on a given job posting. It reads a job posting and a resume from text files, uses OpenAI API with a prompt to write the recommendations to a text file.
 
 ## Prerequisites
 

@@ -28,7 +28,6 @@ def main():
         sys.exit(1)
 
     try:
-        # from tests import test_api # unittest
         import api
         # Read config
         config = configparser.ConfigParser()
@@ -47,7 +46,6 @@ def main():
         prompt = f"Given the following job description:\n\n{job_posting}\n\nAnd the following candidate's resume:\n\n{resume}\n\nProvide a brief feedback if the resume is already great or recommendations on how to improve the resume to be considered a top candidate for this job."
 
         recommendations = api.get_recommendations(prompt)
-        # recommendations = test_api.get_recommendations(prompt) # unittest
 
         write_file(recommendations_file, recommendations)
     except configparser.Error as e:
