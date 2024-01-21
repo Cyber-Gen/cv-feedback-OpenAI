@@ -35,10 +35,10 @@ This program is a contribution to the ISACA community to assist with members job
 
 1. Open a terminal in the root directory of the project.
 
-2. Run the `main.py` script:
+2. Run the `cv-feedback.py` script:
 
     ```bash
-    python main.py
+    python cv-feedback.py
     ```
 
 3. The program will read the job posting and resume, send them to the OpenAI API, and write the recommendations to the `recommendations.txt` file (or whatever file name you specified in the `config.ini` file).
