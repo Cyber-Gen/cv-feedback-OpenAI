@@ -2,7 +2,7 @@
 
 **IMPORTANT: This program shares the contents of job posting and resume files with OpenAI for processing. Please ensure that these files do not contain any sensitive information that you do not wish to be processed by OpenAI. The author of this program is not responsible for any misuse of the program and provides it AS-IS, without any warranty or assumption of responsibility.**
 
-This program is a contribution to the ISACA community to assist with members job search. It uses the OpenAI API to generate recommendations for improving a resume based on a given job posting. It reads a job posting and a resume from text files, uses OpenAI API with a prompt to write the recommendations to a text file.
+This program is a contribution to the ISACA community to assist with members job search. It uses the OpenAI API to generate recommendations for improving a resume based on a given job posting.
 
 ## Prerequisites
 
@@ -17,10 +17,11 @@ This program is a contribution to the ISACA community to assist with members job
 
 2. Obtain an API key from OpenAI.
 
-3. Open the `config.ini` file in the root directory of the project. This file should contain your OpenAI API key and the names of the job posting, resume, and recommendations files. Here's an example:
+3. Create and open the `config.ini` file in the root directory of the project. This file should contain your OpenAI API key and the names of the job posting, resume, and recommendations files. You can adjust the GPT model if you wish. Here's an example:
 
     ```ini
     [DEFAULT]
+    GPT_MODEL = gpt-4o-mini
     API_KEY = your_api_key_here
     JOB_POSTING_FILE = job_posting.txt
     RESUME_FILE = resume.txt
@@ -33,7 +34,7 @@ This program is a contribution to the ISACA community to assist with members job
 
 ## Running the Program
 
-1. Open a terminal in the root directory of the project.
+1. Open terminal in the root directory of the project.
 
 2. Run the `cv-feedback.py` script:
 
@@ -41,7 +42,7 @@ This program is a contribution to the ISACA community to assist with members job
     python cv-feedback.py
     ```
 
-3. The program will read the job posting and resume, send them to the OpenAI API, and write the recommendations to the `recommendations.txt` file (or whatever file name you specified in the `config.ini` file).
+3. The program will read the job posting and resume, send them to the OpenAI, and write the recommendations to the `recommendations.txt` file (or whatever file name you specified in the `config.ini` file).
 
 ## Output
 

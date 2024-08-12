@@ -4,8 +4,7 @@ import subprocess
 import pkg_resources
 
 REQUIRED_PYTHON = (3, 11)
-REQUIRED_PACKAGES = ["setuptools", "openai==0.28", "numpy", "pandas"]
-
+REQUIRED_PACKAGES = ["setuptools", "openai", "numpy", "pandas"]
 
 def check_python_version():
     if sys.version_info < REQUIRED_PYTHON:
@@ -50,6 +49,7 @@ def create_files():
             config_file.write('JOB_POSTING_FILE = job_posting.txt\n')
             config_file.write('RESUME_FILE = resume.txt\n')
             config_file.write('RECOMMENDATIONS_FILE = recommendations.txt\n')
+            config_file.write('GPT_MODEL = gpt-4o-mini\n')
 
     if not os.path.exists('resume.txt'):
         with open('resume.txt', 'w') as resume_file:
